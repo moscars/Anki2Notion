@@ -1,5 +1,6 @@
 from notion.client import NotionClient
 from notion.block import *
+from progress.bar import Bar
 
 # Replace this URL with the URL of the page you want to edit
 page_url = "url"
@@ -9,6 +10,7 @@ asset_folder = "images"
 #export cards as plain text with html and media
 textfile = "test.txt"
 
+print("Preparing data")
 #Split the input file into questions and answers
 list_ = open(textfile).read().split('\n')
 questions = []
@@ -89,19 +91,19 @@ split_into_mult_on_image(answers)
 remove_br_and_div(answers)
 remove_empty_sublist(answers)
 
-for q in questions:
-    print(q)
-
-print("********")
-
-for a in answers:
-    print(a)
-
+print("Connecting to Notion")
+ # Obtain the `token_v2` value by inspecting your browser cookies on a logged-in (non-guest) session on Notion.so
 client = NotionClient(token_v2=tok_v2)
+
+# Replace this URL with the URL of the page you want to edit
 page = client.get_block(page_url)
+# Note: You can use Markdown! We convert on-the-fly to Notion's internal formatted text data structure.
 page.title = "Imported From Anki"
 
-for i in range(0, len(questions)):
+bar = Bar('Importing to Notion', max=len(questions))
+
+for i in range(len(questions)):
+
     current_q = questions[i]
     current_a = answers[i]
     image_question = False
@@ -143,3 +145,6 @@ for i in range(0, len(questions)):
                     image_missing_shown = True
         else:
             textchild = togglechild.children.add_new(TextBlock, title = current_a[i])
+    
+    bar.next()
+bar.finish()
