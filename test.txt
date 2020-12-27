@@ -4,5 +4,5 @@
 <div class=subdeck> Test:</br> </div>  Normal picture answer 	"<img src=""Screenshot 2020-12-26 at 23.13.22.png"">"
 <div class=subdeck> Test:</br> </div>  Picture answer with text before 	"<div>Text before:</div><img src=""Screenshot 2020-12-26 at 23.13.45.png"">"
 <div class=subdeck> Test:</br> </div>  2 picture answer 	"<img src=""Screenshot 2020-12-26 at 23.14.07.png""><div><img src=""Screenshot 2020-12-26 at 23.14.13.png""><br></div>"
-<div class=subdeck> Test:</br> </div>  2 picture answer width text between 	"<img src=""Screenshot 2020-12-26 at 23.14.36.png""><div>Text between:</div><div><img src=""Screenshot 2020-12-26 at 23.14.44.png""><br></div>"
+<div class=subdeck> Test:</br> </div>  2 picture answer with text between 	"<img src=""Screenshot 2020-12-26 at 23.14.36.png""><div>Text between:</div><div><img src=""Screenshot 2020-12-26 at 23.14.44.png""><br></div>"
 "<div class=subdeck> Test:</br> </div>  <img src=""Screenshot 2020-12-26 at 23.15.03.png""><div>Two picture question</div><div><img src=""Screenshot 2020-12-26 at 23.15.16.png""><br></div> "	Answer

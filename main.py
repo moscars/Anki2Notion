@@ -7,11 +7,8 @@ page_url = "url"
 tok_v2 = "Insert token v2"
 asset_folder = "images"
 #export cards as plain text with html and media
-textfile = "filename.txt"
+textfile = "test.txt"
 
-#Test
-#Test2
-#Test5
 #Split the input file into questions and answers
 list_ = open(textfile).read().split('\n')
 questions = []
