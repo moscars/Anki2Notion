@@ -2,7 +2,7 @@
 
 Turn [Anki](https://apps.ankiweb.net) flashcards into [Notion](https://www.notion.so) toggle blocks.
 
-![results](https://media.giphy.com/media/wFBOvxPSWfVqkLxrLB/giphy.gif)
+![results](https://media.giphy.com/media/zFW24gju13s7O1NhP7/giphy.gif)
 
 ## Usage
 
