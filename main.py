@@ -2,12 +2,12 @@ from notion.client import NotionClient
 from notion.block import *
 from progress.bar import Bar
 
-# Replace this URL with the URL of the page you want to edit
-page_url = "url"
+# Insert the URL of the page you want to edit (Open Notion is browser)
+page_url = "Insert url"
 # Obtain the `token_v2` value by inspecting your browser cookies on a logged-in (non-guest) session on Notion.so
 tok_v2 = "Insert token v2"
 asset_folder = "images"
-#export cards as plain text with html and media
+# Export deck as 'Cards as Plain Text' with 'Include HTML and media references' ticked
 textfile = "test.txt"
 
 print("Preparing data")
