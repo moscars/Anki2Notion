@@ -2,6 +2,8 @@
 
 Turn [Anki](https://apps.ankiweb.net) flashcards into [Notion](https://www.notion.so) toggle blocks.
 
+![results](https://media.giphy.com/media/wFBOvxPSWfVqkLxrLB/giphy.gif)
+
 ## Usage
 
 Install [notion-py](https://github.com/jamalex/notion-py) (requires Python 3.5 or greater) by running:
